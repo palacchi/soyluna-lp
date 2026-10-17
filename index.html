@@ -54,6 +54,25 @@ details[open] .plus{transform:rotate(45deg)}
 @media (max-width: 640px){.navtxt{display:none !important}header{flex-wrap:nowrap !important}header > div:first-child{letter-spacing:.2em !important;font-size:22px !important}header nav{gap:10px !important;flex-wrap:nowrap !important}}
 @supports (animation-timeline: scroll()){.stickybuy{animation:buyin linear both;animation-timeline:scroll(root);animation-range:0 640px}}
 @keyframes buyin{0%,75%{opacity:0;transform:translateY(24px);visibility:hidden}100%{opacity:1;transform:none;visibility:visible}}
+@media (max-width: 640px){
+.hero{min-height:0 !important;padding:20px 20px 48px !important}
+.hero > div[aria-hidden]{opacity:.3 !important}
+.hero > div[aria-hidden].drift2{display:none !important}
+.herocols{gap:28px !important}
+.herovis{min-height:0 !important}
+.herovis > .in2{width:72% !important}
+section{padding-top:64px !important;padding-bottom:64px !important}
+#info{padding-bottom:0 !important}
+#point{gap:36px !important}
+#story > div{gap:32px !important}
+.formula{flex-direction:column !important;gap:2px !important}
+.formula > .op{font-size:44px !important;line-height:1.1 !important}
+.formula > .fres{text-align:center;margin-top:4px}
+section h2{font-size:26px !important}
+.storyh{font-size:22px !important}
+.storyp{font-size:17px !important}
+h1,h2,h3{overflow-wrap:anywhere}
+}
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
 </style>
 <style>html{scroll-behavior:smooth}img,video{max-width:100%}</style>
@@ -72,7 +91,7 @@ details[open] .plus{transform:rotate(45deg)}
 </nav>
 </header>
 
-<section style="position: relative; min-height: 720px; padding: 40px 24px 120px; overflow: hidden">
+<section class="hero" style="position: relative; min-height: 720px; padding: 40px 24px 120px; overflow: hidden">
 <div aria-hidden="true" class="drift" style="position: absolute; right: -40px; top: 60px; width: 420px; height: 170px; background: #F6F0C8; border-radius: 999px; opacity: 0.9"></div>
 <div aria-hidden="true" class="drift2" style="position: absolute; left: -60px; top: 380px; width: 360px; height: 150px; background: #F6F0C8; border-radius: 999px; opacity: 0.75"></div>
 <div aria-hidden="true" class="drift" style="position: absolute; left: 38%; bottom: 40px; width: 280px; height: 110px; background: #F6F0C8; border-radius: 999px; opacity: 0.6"></div>
@@ -85,7 +104,7 @@ details[open] .plus{transform:rotate(45deg)}
 <svg aria-hidden="true" class="fall" style="position: absolute; left: 55%; top: 0; animation-delay: 6s" width="26" height="26" viewBox="0 0 30 30"><circle cx="15" cy="15" r="11" fill="#9BCB5B"></circle><circle cx="11" cy="11" r="3" fill="#D5EBA5"></circle></svg>
 <svg aria-hidden="true" class="fall" style="position: absolute; right: 10%; top: 0; animation-delay: 1.5s; animation-duration: 12s" width="20" height="20" viewBox="0 0 30 30"><circle cx="15" cy="15" r="11" fill="#9BCB5B"></circle><circle cx="11" cy="11" r="3" fill="#D5EBA5"></circle></svg>
 
-<div style="position: relative; z-index: 2; max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+<div class="herocols" style="position: relative; z-index: 2; max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
 <div style="flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
 <div class="in1" style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap">
 <svg aria-hidden="true" width="34" height="34" viewBox="0 0 34 34"><path d="M24 4a13 13 0 1 0 6 21A11 11 0 0 1 24 4z" fill="#F2D34B"></path></svg>
@@ -104,7 +123,7 @@ details[open] .plus{transform:rotate(45deg)}
 </div>
 <a href="https://www.instagram.com/official.soyluna_/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 15px; font-weight: 700; color: #1F3A4D; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#B8401C" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="#B8401C" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="#B8401C"/></svg><span style="border-bottom: 2px solid #B8401C">インスタで使い方をチェック</span></a>
 </div>
-<div style="position: relative; flex: 1 1 360px; display: flex; justify-content: center; align-items: center; min-height: 600px">
+<div class="herovis" style="position: relative; flex: 1 1 360px; display: flex; justify-content: center; align-items: center; min-height: 600px">
 <svg aria-hidden="true" class="spin" style="position: absolute; width: 560px; height: 560px; max-width: 115%" viewBox="0 0 480 480"><defs><path id="ring" d="M240 240 m-220 0 a220 220 0 1 1 440 0 a220 220 0 1 1 -440 0"></path></defs><text font-family="Josefin Sans, sans-serif" font-size="16" letter-spacing="7" fill="#B8401C"><textPath href="#ring">SOY CARE · FRAGRANCE FREE · NO RINSE · GENTLE FEMCARE · SOY CARE · </textPath></text></svg>
 <div class="in2" style="position: relative; width: 78%; max-width: 360px; aspect-ratio: 2 / 3; border-radius: 999px 999px 40px 40px; overflow: hidden; border: 8px solid #FFFFFF; box-shadow: 0 30px 60px rgba(31,58,77,0.22); background: #F6F0C8">
 <video src="assets/hero.mp4" poster="assets/hero-poster.jpg" autoplay="" muted="" loop="" playsinline="" aria-label="SOYLUNAを手に微笑む女性の映像" style="width: 100%; height: 100%; object-fit: cover; display: block"></video>
@@ -149,9 +168,9 @@ details[open] .plus{transform:rotate(45deg)}
 </div>
 <div class="rv" style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
 <div style="font-family: 'Josefin Sans', sans-serif; letter-spacing: 0.3em; font-size: 14px; color: #8F2F12">STORY</div>
-<h2 style="margin: 0; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.55; font-weight: 900">肌を知るプロと、<br>女性のからだに向き合う姉妹が、<br>いっしょにつくりました。</h2>
+<h2 class="storyh" style="margin: 0; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.55; font-weight: 900">肌を知るプロと、<br>女性のからだに向き合う姉妹が、<br>いっしょにつくりました。</h2>
 <p style="margin: 0; font-size: 16px">プロのエステティシャンと、フェムケア姉妹「KANON（カノン）」。ふたりの想いを重ねて生まれたのが、SOYLUNA（ソルナ）です。洗い流せない場面でも、デリケートゾーンをやさしくケアしたい。肌あたりのやさしさにこだわって、毎日でも使いたくなるシートを目指しました。</p>
-<p style="margin: 0; font-size: 20px; font-weight: 700; color: #8F2F12">清潔にするだけでなく、「いたわる」ことを大切に。<br>ゆらぐ日も、自分を好きでいられる1枚を。</p>
+<p class="storyp" style="margin: 0; font-size: 20px; font-weight: 700; color: #8F2F12">清潔にするだけでなく、「いたわる」ことを大切に。<br>ゆらぐ日も、自分を好きでいられる1枚を。</p>
 </div>
 </div>
 </section>
@@ -161,12 +180,12 @@ details[open] .plus{transform:rotate(45deg)}
 <div style="font-family: 'Josefin Sans', sans-serif; letter-spacing: 0.3em; font-size: 14px; color: #8F2F12">POINT</div>
 <h2 style="margin: 0; font-size: clamp(28px, 3.8vw, 42px); font-weight: 900">SOYLUNA、3つのやさしさ</h2>
 </div>
-<div class="rv" style="display: flex; justify-content: center; align-items: center; gap: clamp(12px, 3vw, 32px); flex-wrap: wrap">
+<div class="rv formula" style="display: flex; justify-content: center; align-items: center; gap: clamp(12px, 3vw, 32px); flex-wrap: wrap">
 <div style="display: flex; flex-direction: column; align-items: center; gap: 8px"><div class="pulse" style="width: 132px; height: 132px; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="84" height="48" viewBox="0 0 56 32"><path d="M4 18c6-14 42-14 48 0-6 12-42 12-48 0z" fill="#3E9E4A"></path><circle cx="18" cy="17" r="5" fill="#C9E26A"></circle><circle cx="29" cy="16" r="5" fill="#C9E26A"></circle><circle cx="40" cy="17" r="5" fill="#C9E26A"></circle></svg></div><span style="font-weight: 700">大豆由来成分</span></div>
-<div style="font-family: 'Josefin Sans', sans-serif; font-size: 56px; color: #B8401C; font-weight: 300">+</div>
+<div class="op" style="font-family: 'Josefin Sans', sans-serif; font-size: 56px; color: #B8401C; font-weight: 300">+</div>
 <div style="display: flex; flex-direction: column; align-items: center; gap: 8px"><div class="pulse" style="width: 132px; height: 132px; border-radius: 999px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; animation-delay: .6s"><svg aria-hidden="true" width="48" height="60" viewBox="0 0 40 50"><path d="M20 4c10 13 15 21 15 28a15 15 0 0 1-30 0c0-7 5-15 15-28z" fill="#7FBEE3"></path><path d="M13 32a7 7 0 0 0 7 7" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path></svg></div><span style="font-weight: 700">やさしさ</span></div>
-<div style="font-family: 'Josefin Sans', sans-serif; font-size: 56px; color: #B8401C; font-weight: 300">=</div>
-<div style="font-size: clamp(22px, 2.6vw, 30px); font-weight: 900; line-height: 1.4">さっぱり、<br><span style="color: #B8401C">やさしい</span>拭き心地。</div>
+<div class="op" style="font-family: 'Josefin Sans', sans-serif; font-size: 56px; color: #B8401C; font-weight: 300">=</div>
+<div class="fres" style="font-size: clamp(22px, 2.6vw, 30px); font-weight: 900; line-height: 1.4">さっぱり、<br><span style="color: #B8401C">やさしい</span>拭き心地。</div>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px">
 <div class="rv lift" style="background: #FFFFFF; border-radius: 32px; padding: 36px; display: flex; flex-direction: column; gap: 12px">
@@ -274,7 +293,7 @@ details[open] .plus{transform:rotate(45deg)}
 <div class="rv" id="popup" style="background: #1F3A4D; color: #F3F7FA; border-radius: 32px; padding: 32px 36px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
 <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1 1 320px">
 <span style="align-self: flex-start; background: #F2D34B; color: #1F3A4D; border-radius: 999px; padding: 4px 14px; font-size: 13px; font-weight: 700">POP UP 開催中・2027年1月末まで</span>
-<p style="margin: 0; font-size: clamp(20px, 2.8vw, 26px); font-weight: 900; line-height: 1.5">二子玉川の店頭でも買えます</p>
+<p style="margin: 0; font-size: clamp(20px, 2.8vw, 26px); font-weight: 900; line-height: 1.5">二子玉川の店頭でも<br>ご購入いただけます</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.8">Ethical&amp;SEA 二子玉川ライズ・ドッグウッドプラザ店<br>パッケージの実物を見て、その場でお買い求めいただけます。お近くの方はぜひお立ち寄りください。</p>
 </div>
 </div>
@@ -286,7 +305,7 @@ details[open] .plus{transform:rotate(45deg)}
 <div style="font-family: 'Josefin Sans', sans-serif; letter-spacing: 0.3em; font-size: 14px; color: #8F2F12">PRODUCT INFO</div>
 <h2 style="margin: 0; font-size: clamp(28px, 3.8vw, 42px); font-weight: 900">商品情報</h2>
 </div>
-<div class="rv" style="background: #FFFFFF; border-radius: 22px; overflow: hidden"><table style="width: 100%; border-collapse: collapse"><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">品名</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">ウエットティシュ</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">販売名</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">ソルナ（SOYLUNA）</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">用途</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">デリケートケアに</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">成分</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">水、DPG、ブチルカルバミン酸ヨウ化プロピニル、EDTA-2Na、クエン酸、クエン酸三ナトリウム、安息香酸Na、ベンザルコニウムクロリド、ダイズ油脂肪酸、BG、レシチン、フェノキシエタノール</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">基布素材</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">レーヨン、ポリエステル</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">サイズ・枚数</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">約145mm×200mm・1包10枚入り</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">原産国</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">日本</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">発売元</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">株式会社OMATSULI（兵庫県西宮市）</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">製造販売元</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">株式会社ISM（愛媛県四国中央市）</td></tr></table></div>
+<div class="rv" style="background: #FFFFFF; border-radius: 22px; overflow: hidden"><table style="width: 100%; border-collapse: collapse"><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">品名</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">ウエットティシュ</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">販売名</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">ソルナ（SOYLUNA）</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">用途</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">デリケートケア</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">成分</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">水、DPG、ブチルカルバミン酸ヨウ化プロピニル、EDTA-2Na、クエン酸、クエン酸三ナトリウム、安息香酸Na、ベンザルコニウムクロリド、ダイズ油脂肪酸、BG、レシチン、フェノキシエタノール</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">基布素材</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">レーヨン、ポリエステル</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">サイズ・枚数</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">約145mm×200mm・1包10枚入り</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">原産国</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">日本</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">発売元</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">株式会社OMATSULI（兵庫県西宮市）</td></tr><tr><th scope="row" style="text-align: left; vertical-align: top; padding: 14px 16px; width: 30%; background: #EAF4FA; font-weight: 700; font-size: 14px; border-bottom: 1px solid #D6E6F0">製造販売元</th><td style="padding: 14px 16px; font-size: 14px; line-height: 1.8; border-bottom: 1px solid #D6E6F0">株式会社ISM（愛媛県四国中央市）</td></tr></table></div>
 <details class="rv" style="background: #FFFFFF; border-radius: 22px; padding: 0 24px"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 64px; font-weight: 700; font-size: 16px">使用上の注意<span class="plus" aria-hidden="true" style="font-size: 26px; color: #B8401C; font-weight: 400">+</span></summary><ul style="margin: 0 0 22px; padding-left: 1.2em; font-size: 14px; line-height: 1.8; display: flex; flex-direction: column; gap: 6px"><li>本品はデリケートウエットシートです。目的以外には使用しないでください。</li><li>開封後はすぐにご使用いただき、乾燥を防ぐために必ずフタをしっかり閉めて保管してください。</li><li>お肌に異常がある場合（傷、はれもの、湿疹、かぶれ等）には使用しないでください。</li><li>使用中または使用後に赤み、はれ、かゆみ、刺激等の異常があらわれた場合は、直ちに使用を中止し、皮膚科専門医等にご相談ください。症状が悪化することがあります。</li><li>目や口、粘膜には使用しないでください。誤って目に入った場合は、すぐに水またはぬるま湯で洗い流してください。</li><li>乳幼児の手の届かない場所に保管してください。</li><li>直射日光や高温多湿を避けて保管してください。</li><li>トイレには流せませんので、使用後は必ずごみとして処理してください。</li><li>使用感には個人差がありますので、初めてお使いになる際は目立たない部分で試してからご使用ください。</li><li>敏感肌の方や妊娠中の方は、必ず事前に成分をご確認のうえ、ご自身の体調や体質に合うかどうかご判断ください。</li><li>長時間の連続使用は避け、清潔な状態を保つために適切なタイミングでのご使用をおすすめします。</li><li>本品は医薬品・医薬部外品ではありませんので、治療目的での使用はできません。</li></ul></details>
 </section>
 
