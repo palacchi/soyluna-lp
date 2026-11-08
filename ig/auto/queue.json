@@ -102,8 +102,8 @@
    "posted": true,
    "media_id": "18136298993509424",
    "posted_at": "2026-11-08T09:53:49+00:00",
-   "story_posted": false,
-   "story_media_id": null,
+   "story_posted": true,
+   "story_media_id": "18000334125010797",
    "story_image_url": "https://raw.githubusercontent.com/palacchi/soyluna-lp/main/ig/story/s06.jpg",
    "story_video_url": "https://raw.githubusercontent.com/palacchi/soyluna-lp/main/ig/storyv/s06.mp4"
   },
